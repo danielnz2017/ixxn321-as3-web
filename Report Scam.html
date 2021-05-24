@@ -63,8 +63,9 @@
     <div class="contentbox">
         <div class="label"><h1>For an emergency please click here:</h1></div>
             <div class="content">
-                <p>lasdkjf;ldskjf;laskdmfl;askdmf;laksdfml;aksdjfaklsjdf
-                </p>
+              <br>
+              <p>If you have lost a large amount of money or feel threatened, call</p>
+                <h2>0800 389 204 34 or 105</h2>
             </div>
     </div>
 </div> 
@@ -140,7 +141,11 @@
         </div>
 
           <br>
+
+
 <h1>Scam details</h1>
+<p>Please provide any scam details you have. It will help us track down what had caused it.</p>
+<hr>
 
           <!--------Row 4-------->
           <br></br>
@@ -153,37 +158,78 @@
         <div class="column">
           <label for="Tags"><b>Please select what kind of scam</b></label>
           <select id="Tags" name="tags"> 
-            <option value="">asdf</option>
-            <option value="">Agile</option>
-            <option value="">Blockframe</option>
-            <option value="">Browsing pattern</option>
-            <option value="">Customer Journey</option>
-            <option value="">Eye tracking</option>
-            <option value="">Information architecture</option>
-            <option value="">Iterative design</option>
-            <option value="">Micro-copy</option>
-            <option value="">Onboarding</option>
-            <option value="">Persona</option>
-            <option value="">Prototyping</option>
-            <option value="">Style systems</option>
-            <option value="">User flow</option>
-            <option value="">User testing</option>
+            <option value="">Please select one</option>
+            <option value="">Buying & Selling</option>
+            <option value="">Gaining your personal information</option>
+            <option value="">Dating and Romance</option>
+            <option value="">Fake Charities</option>
+            <option value="">Investments</option>
+            <option value="">Jobs and employment</option>
+            <option value="">Threats and extortion</option>
+            <option value="">Unexpected Money</option>
+            <option value="">Unexpected Winnings</option>
           </select>
         </div>
         </div>
+        
+        <br><br>
+        <label for="Please describe the scam"><b1>Please describe the scam</b1></label>
+        <div class="column2">
+          <textarea name="paragraph_text" cols="50" rows="10"></textarea>
+      </div>
+     
 
-        <div class="column3">
-          <label for="Please describe the scam"><b>Please describe the scam</b></label>
-          <input type="text" placeholder="Please describe the scam" name="Date" id="Date" >
 
+      <!--------Row 5-------->
+         <div class="row">
+          
+          <div class="column">
+          <label for="Has money been involved?"><b>Has money been involved?</b></label>
+          <br><br>
+          <input type="radio" id="Yes" name="YN" value="Yes">
+          <label for="Yes">Yes</label>
+          <input type="radio" id="No" name="YN" value="No">
+          <label for="No">No</label>
+          <div class="tooltip"><button>i</button>
+              <span class="tooltiptext">This is so we can contact you</span>
+            </div>
+          </div>
+
+         
+         <div class="column">
+          <label for="Is the person/ you  being targeted recieving support from anyone?"><b>Is the person/ you  being targeted recieving support from anyone?</b></label>
+         <br><br>
+          <input type="radio" id="Yes" name="YN1" value="Yes">
+          <label for="Yes">Yes</label>
+          <input type="radio" id="No" name="YN1" value="No">
+          <label for="No">No</label>
+          <div class="tooltip"><button>i</button>
+          <span class="tooltiptext">This is so we can contact you</span>
+              </div>   
+          </div>
+      </div>
+<br><br>
+      <h2>Any other evidence:</h2>
+          <div class="column2">
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+          <p>Select a file to upload:</p>
+          <input type="file" name="fileToUpload" id="fileToUpload">
         </div>
+
+    
+          <div class="contentbox">
+            <h2>Privacy</h2><br>
+              <div class="label"><h2>Your privacy is our biggest concern in this situation, all information is kept within the company and isn’t shared with anyone without consulting you first.</h2></div>
+          </div>
 
           <br></br>
           <div class="column2">
-          <button type="submit" class="registerbtn">Register</button>
+          <button type="submit" class="registerbtn">Submit</button>
             </div>
 
-        </div>
+
+          </div>
+  
       </form>
 
   <br><br>
