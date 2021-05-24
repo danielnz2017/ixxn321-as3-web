@@ -8,7 +8,6 @@
 
 }
 
-
 html, body{
     
 width: 100%;
@@ -21,7 +20,6 @@ background: #E5E5E5;
 
 }
 
-
 .logo{
 
 
@@ -32,7 +30,6 @@ background: #E5E5E5;
   float: left;
   margin-left: 0px;
 }
-
 
 
 
@@ -49,9 +46,7 @@ li {
 display:inline-block;
 margin-right: 2%;
 
-
 }
-
 
 li a:link,a:visited {
   margin:0 auto;
@@ -78,9 +73,27 @@ text-transform:uppercase;
 background-color:#044777;
 text-align:center;
 
-
-
-
-
-
 }
+
+
+/* Jessica's addtions */
+.grid-container{
+display: grid;
+grid-template-columns: 310px 310px 310px 310px;
+grid-template-rows: 310px 310px ; 
+grid-gap: 10px;
+background-color: blue;
+padding:10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+p{
+  font-size: 12px;
+}
+
