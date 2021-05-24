@@ -1,48 +1,205 @@
-<!DOCTYPE HTML>
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/main_style.css">
-	<script defer src="js/main.js"></script>
-	<title>Report Scam</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    
+<!-- Style sheet -->
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/main_style.css">
+<link rel="JS" href="js/main.js">
 
 
+ <!--x Style sheet x-->
+
+
+    <title>Scamgo</title>
 </head>
-
 <body>
 
-	<div id="menu">
-        <header>
-			<img src="img/logo.png" class="logo" />
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Report Scam.html">Report Scam</a></li>
-            <li><a href="Scams.html">Scams</a></li>
-            <li><a href="Are You Lost.html">Are You LOST?</a></li>
-        </ul>
+    <!----------NAV BAR ------->
+ <nav>
+    <!---------burger ------->
+    <div class="burger">
+       <div class="line1"></div>
+       <div class="line2"></div>
+       <div class="line3"></div>
+       </div>
+   
+   <!---------burger ------->
+   
+   <!--------------NAV------->
+           
+   <header class='header'>				<!------------------Header section-------------------------------->
+       
+       <div class="links">
+            <img src="IMG/Screenshot 2021-05-22 at 4.46.20 PM.png" class="logo">
+   <input class="menu-btn" type="checkbox" id="menu-btn" />
+   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+     <ul class="menu">
+       <li><a href="Scams.html">SCAMS</a></li>
+       <li><a href="Report Scam.html">REPORT A SCAM</a></li>
+       <li><a href="Are You Lost.html">ARE YOU LOST?</a></li>
+     </ul>
+   </div>
+   </header> <!---------X-------Header section----------------X-------------->
+   
+   </nav>
 
+   
+   
+   <!-----X-----NAV BAR ---X---->
+  
 
-    	</header>
+    <!---------------------------FORM---------------------------->
+    
+
+    
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <div class="container">
+           
+<div class="accordion">
+    <div class="contentbox">
+        <div class="label"><h1>For an emergency please click here:</h1></div>
+            <div class="content">
+                <p>lasdkjf;ldskjf;laskdmfl;askdmf;laksdfml;aksdjfaklsjdf
+                </p>
+            </div>
     </div>
+</div> 
 
+<br><br><br>
+          <h1>Report a Scam</h1>
+          <p>Report a scam with us and we will get in contact with you with in the next 24 hours. It’s key to give as much detail as possible about the scam so we are able to work on dealing with the issue.</p>
+          <hr>
 
+          <!--------Row 1-------->
+          <div class="row">
+            <div class="column">
+          <label for="First name"><b>First name</b></label><br>
+          <input type="text" placeholder="First name" name="First name" id="First name" required>
+    
+      
 
-	<main>
+        </div>
 
-		
+          <div class="column">
+          <label for="Last name"><b>Last name  </b></label><br>
+          <input type="text" placeholder="Last name" name="Last name" id="Last name" required>
+        </div>
+        </div>
+         
+        <!--------Row 2-------->
+        <div class="row">
+            <div class="column">
+          <label for="Age"><b>Age</b></label> <br>
+          <input type="text" placeholder="Age" name="Age" id="Age" required>
+        </div>
+        
+        <div class="column">
+          <label for="Phone number"><b>Please enter your phone number  </b></label>
+          <input type="text" placeholder="Phone number" name="phone number" id="phone number" required>
+        </div>
+        </div>
 
+         <!--------Row 3-------->
+        <div class="row">
+        <div class="column">
+        <label for="Email address"><b>What is your email address  </b></label>
+        <input type="text" placeholder="Email address" name="Email address" id="Email address" required>
+        <div class="tooltip"><button>i</button>
+            <span class="tooltiptext">This is so we can contact you</span>
+          </div>
+              
+    </div>
+       
+        <div class="column">
+          <label for="Tags"><b>Please select your region in New Zealand</b></label>
 
+          <select id="Tags" name="tags"> 
+            <option value="">Please select one</option>
+            <option value="">Bay of islands</option>
+            <option value="">Northland</option>
+            <option value="">Auckland region</option>
+            <option value="">Waikato</option>
+            <option value="">Bay of Plenty</option>
+            <option value="">Gisborne</option>
+            <option value="">Hawke's Bay</option>
+            <option value="">Taranaki</option>
+            <option value="">Manawatu-Whanganui</option>
+            <option value="">Wellington</option>
+            <option value="">Nelson</option>
+            <option value="">Marlborough</option>
+            <option value="">West Coast</option>
+            <option value="">Canterbury</option>
+            <option value="">Otago</option>
+            <option value="">Southland</option>
+          </select>
+        </div>
+        </div>
 
+          <br>
+<h1>Scam details</h1>
 
-	</main>
+          <!--------Row 4-------->
+          <br></br>
+        <div class="row">
+        <div class="column">
+          <label for="Date of Occurance"><b>What date did this occur?</b></label>
+          <input type="text" placeholder="Date of Occurance" name="Date" id="Date" required>
+        </div>
 
+        <div class="column">
+          <label for="Tags"><b>Please select what kind of scam</b></label>
+          <select id="Tags" name="tags"> 
+            <option value="">asdf</option>
+            <option value="">Agile</option>
+            <option value="">Blockframe</option>
+            <option value="">Browsing pattern</option>
+            <option value="">Customer Journey</option>
+            <option value="">Eye tracking</option>
+            <option value="">Information architecture</option>
+            <option value="">Iterative design</option>
+            <option value="">Micro-copy</option>
+            <option value="">Onboarding</option>
+            <option value="">Persona</option>
+            <option value="">Prototyping</option>
+            <option value="">Style systems</option>
+            <option value="">User flow</option>
+            <option value="">User testing</option>
+          </select>
+        </div>
+        </div>
 
+        <div class="column3">
+          <label for="Please describe the scam"><b>Please describe the scam</b></label>
+          <input type="text" placeholder="Please describe the scam" name="Date" id="Date" >
 
+        </div>
+
+          <br></br>
+          <div class="column2">
+          <button type="submit" class="registerbtn">Register</button>
+            </div>
+
+        </div>
+      </form>
+
+  <br><br>
+     
+   <!------------X---------------FORM----------X------------------>
+ 
+<script>
+
+const accordion = document.getElementsByClassName('contentbox');
+
+for (i=0; i<accordion.length; i++){
+accordion[i].addEventListener('click',function(){
+    this.classList.toggle('active')
+})
+}
+</script>
 
 </body>
-
 </html>

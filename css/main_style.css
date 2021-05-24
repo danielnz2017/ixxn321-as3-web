@@ -1,71 +1,314 @@
-*, *::after, *::before {
 
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'PT Serif', serif;
-    
-  
+/*------------------Form-------------------*/
+
+.accordion.contentbox{
+  position:relative;
+  margin: 10px 20px;
   
   }
   
+  .accordion .contentbox .label{
+  position: relative;
+  padding: 10px;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  background:#FFBB33;
+  cursor:pointer;
+  }   
   
-  html, body{
+  .accordion .contentbox .label::before{
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right:20px;
+  transform:translateY(-50%);
+  font-size: 40px;
+  }
+  
+  .accordion .contentbox.active .label::before{
+  content: '-';
+  
+      }
+  
+  .accordion .contentbox .content {
+  position: relative;
+  padding: 5px;
+  background:#FFBB33;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+  height:0;
+  overflow:hidden;
+  transition: 0.9%;
+  overflow-y:auto;
+  
+  }
+  
+  .accordion .contentbox.active .content {
+      height:150px;
+      padding: 10px;
+  }
+  
+  /*------------------Grid-----------------------*/
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+      width: 50%;
+      padding-right: 10px;
+      padding-left: 20px;
+      height: auto;
+      float: left;
       
-  width: 100%;
-  height: 100%;
       
-  margin: 0px; 
-  padding: 0px;
-  overflow-x: hidden;
-  background: #E5E5E5;
+    }
   
+    .column2 {
+      width: 100%;
+      height: auto;
+      float: center;
+      align:center;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .column3 {
+      width: 60%;
+      height: auto;
+      font-size: 16px;
+      display: flex;
+    }
+    
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      
+    }
+  
+    .row{
+      float: center;
+  
+    }
+  
+  /*-----------X-------Grid--------X---------------*/
+  
+  b{padding-right:30px;
   }
   
-  .logo{
-
-
-    width: 200px;
-    height: 38px;
-    position: relative;
-    top: 5px;
-    float: left;
-    margin-left: 10px;
+  p{
+  text-align: center;
+  font-size: 16px;  
+  padding-top: 15px;  
+  padding-bottom: 15px;  
+  padding-left: 30px;
+  padding-right: 30px;
   }
-
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-    overflow:hidden;
-    
-}
-a:link,a:visited {
-    margin:0 auto;
-    display:block;
-    width: 200px;
-    font-weight:bold;
-    color:#FFFFFF;
-    text-align:center;
-    padding:20px;
-    text-decoration:none;
-    text-transform:uppercase;
-}
-a:hover, a:active {
-    background-color:#023254;
-}
-li {
-    display:inline-block;
-    margin-right: 2%;
-    
-    
-}
-#menu {
-  background-color:#044777;
-  text-align:center;
-
-
-
-
-
   
-}
+  h1{
+  
+      text-align: center;
+      padding-right: 10px;
+  }
+  
+  * {box-sizing: border-box}
+  
+  /* Add padding to containers */
+  .container {
+    padding-top: 160px;
+    padding-left:70px;
+    padding-right:70px;
+  }
+  
+  /* Full-width input fields */
+  input[type=text] {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0px 22px 0px;
+    display: inline-block;
+    border: none;
+    border-radius: 15px;
+    background: #f1f1f1;
+    font-size: 16px;
+  }
+  
+  input[type=text]:focus {
+    background-color:#C3CED3;
+    outline: none;
+    font-size: 16px;
+    
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid#C3CED3;
+    margin-bottom: 25px;
+    
+  }
+  
+  /* Set a style for the submit/register button */
+  .registerbtn {
+    background-color: #044777;;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+    border-radius: 25px;
+  }
+  
+  .registerbtn:hover {
+    opacity:1;
+  }
+  
+  /*--------------drop down-------------------*/
+  
+  select {
+      width: 80%;
+      padding: 15px;
+      margin: 5px 0px 22px 0px;
+      display: inline-block;
+      border: none;
+      border-radius: 15px;
+      background: #f1f1f1;
+      font-size: 16px;
+    }
+  
+  textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      border-radius: 15px;
+      background: #f1f1f1;
+      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+     /*--------X------drop down--------X-----------*/
+  
+  
+   /*--------------Hover------------------*/
+  
+    /*------Button-------- */
+  
+    button{
+      border-radius: 50%;
+      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      color:black;
+      background-color: #F0A18A;
+      outline: none;
+      padding-left: 8px;
+      padding-right: 8px;
+      border: none;
+      
+    }
+  
+  
+  
+  
+   /*---X---Button-----X--- */
+  
+   /* Tooltip container */
+  .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 180px;
+      background-color:#F0A18A;
+      color:black;
+      text-align: center;
+      padding: 2px 0;
+      border-radius: 6px;
+      border:3px;
+  
+      /* Position the tooltip text - see examples below! */
+      position: absolute;
+      z-index: 1;
+    }
+    
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+  
+     .tooltip .tooltiptext {
+      top: -5px;
+      left: 105%;
+      opacity: 1;
+    }
+  
+    .tooltip .tooltiptext::after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      right: 100%; /* To the left of the tooltip */
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color:#F0A18A
+    }
+  
+  
+   /*----------x----Hover--------x----------*/
+  
+  
+  
+  /*--------X----------Form---------X----------*/
+  
+  
+  /*--------------------Filter system--------------------------*/
+  
+  .container1 {
+      overflow: hidden;
+    }
+    
+    .filterDiv {
+      float: left;
+      background-color: #2196F3;
+      color: #ffffff;
+      width: 100px;
+      line-height: 100px;
+      text-align: center;
+      margin: 2px;
+      display: none; /* Hidden by default */
+    }
+    
+    /* The "show" class is added to the filtered elements */
+    .show {
+      display: block;
+    }
+    
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+    
+    /* Add a light grey background on mouse-over */
+    .btn:hover {
+      background-color: #ddd;
+    }
+    
+    /* Add a dark background to the active button */
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+  
+  
+    /*------------X--------Filter system-----------X---------------*/
