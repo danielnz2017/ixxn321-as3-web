@@ -27,16 +27,16 @@
 	</header>
 	</div>
 	<main>
-<div>
-<h1>Scams</h1>
-<p>	
-	Search and explore all the information and educational articles that we offer. 
-	These articles are free to view and can be quite helpful if you want to learn more about 
-	a certin type of scam.
-</p>
+<div id="introText">
+	<h1 id="scamPage">Scams</h1>
+		<p>	
+			Search and explore all the information and educational articles that we offer. 
+			These articles are free to view and can be quite helpful if you want to learn more about 
+			a certin type of scam.
+		</p>
 </div>
 <div id="filterBox">
-	<h2>Filter by:</h2>
+	<h2 id="filterByTitle">Filter by:</h2>
 	<button class="filterBtn"  onclick="filterSelection('all')">All</button>
 	<button class="filterBtn"  onclick="filterSelection('currentScam')">Current scams</button>
 	<button class="filterBtn" onclick="filterSelection('howTo')">How to</button>
@@ -52,98 +52,136 @@
 
 <div class="grid-container">
 	<div class="grid-item currentScams">
-		<button>Current scams</button>
-		<h3>Don’t be an egg</h3>
+	<div>
+		<button class="filterBtn-WithBox">Current scams</button>
+	</div>
+		<h4>Don’t be an egg</h4>
 		<p>
 			Sadly we know scammers hop into Easter with hollow promises set to cause pain and 
 			we’re warning people to be careful when it comes to …
 		</p>
-		<p>9/4/2020</p>
-		<p>K. Lam</p>
+		<div class="article-footer">
+			<div clas="date"><p>9/4/2020</p></div>
+			<div class="author"><p>K. Lam</p></div>
+		</div>
 	</div>
 
 	<div class="grid-item parenting howTo">
-		<button>Parenting</button>
-		<button>How to</button>
-		<h3>Prize & Sweepstake 
-			Scam</h3>
+		<div>
+			<button class="filterBtn-WithBox">Parenting</button>
+			<button class="filterBtn-WithBox">How to</button>
+		</div>
+		
+		<h4>Prize & Sweepstake 
+			Scam</h4>
 		<p>
 			if you’ve received a text message or email claiming you’ve been selected to take 
 			part in a survey or receive a prize/lottery, you might be …
 		</p>
-		<p>21/11/2020</p>
-		<p>L. Chris</p>
+		<div class="article-footer">
+			<div class="date"><p >21/11/2020</p></div>
+			<div class="author"><p>L. Chris</p></div>
+		</div>
 	</div>
 
 	<div class="grid-item moneyScam">
-		<button>Money Scam</button>
-		<h3>Romance scams</h3>
+		<div>
+			<button class="filterBtn-WithBox">Money Scam</button>
+		</div>
+		
+		<h4>Romance scams</h4>
 		<p>
 			Romance scammers are good at what they do and can spend months building up trust
 			before they start to ask for sums of money...
 		</p>
-		<p>1/05/2019</p>
-		<p>M. Wilson</p>
+		<div class="article-footer">
+			<div class="date"><p>1/05/2019</p></div>
+			<div class="author"><p>M. Wilson</p></div>
+		</div>
 	</div>
 
 	<div class="grid-item emailScam popular">
-		<button>Email Scam</button>
-		<button>Popular</button>
-		<h3>What to do in a data
-			breach?</h3>
+		<div>
+			<button class="filterBtn-WithBox">Email Scam</button>
+			<button class="filterBtn-WithBox">Popular</button>
+		</div>
+		
+		<h4>What to do in a data
+			breach?</h4>
 		<p>It is not uncommon for legitimate organisations to have their data compromised, and
 			when this happens it might mean your data has been affected. Find …
 		</p>
-		<p>7/07/2021</p>
-		<p>G. Johnson</p>
+		<div class="article-footer">
+			<div class="date"><p >7/07/2021</p></div>
+			<div class="author"><p>G. Johnson</p></div>
+		</div>
 	</div>
 
 	<div class="grid-item popular howTo">
-		<button>Popular</button>
-		<button>How to</button>
-		<h3>Understanding fake
-			email scams</h3>
+		<div>
+			<button class="filterBtn-WithBox">Popular</button>
+			<button class="filterBtn-WithBox">How to</button>
+		</div>
+		
+		<h4>Understanding fake
+			email scams</h4>
 		<p>
 			We has received numerous reports about an email scam where the scammer falsely claims
 			to have hacked into their device and recorded intimate recordings of …
 		</p>
-		<p>6/11/2021</p>
-		<p>J. Martin</p>
+		<div class="article-footer">
+			<div class="date"><p>6/11/2021</p></div>
+			<div class="author"><p>J. Martin</p></div>
+		</div>
 	</div>
 
 	<div class="grid-item popular">
-		<button>Popular</button>
-		<h3>COVID-19 Scam Spotting</h3>
+		<div>
+			<button class="filterBtn-WithBox">Popular</button>
+		</div>
+		
+		<h4>COVID-19 Scam Spotting</h4>
 		<p>
 			We are urging people to be vigilant to opportunistic scammers looking to profit from COVID-19. 
 			We’ve seen first-hand how scammers are using COVID-19 as the …
 		</p>
-		<p>3/04/2020</p>
-		<p>J. Moore</p>
+		<div class="article-footer">
+			<div class="date"><p>3/04/2020</p></div>
+			<div class="author"><p>J. Moore</p></div>
+		</div>
 	</div>
 
 	<div class="grid-item parenting stayingSafe">
-		<button>Parenting</button>
-		<button>Staying Safe</button>
-		<h3>Understanding 
-			influencer scams</h3>
+		<div>
+			<button class="filterBtn-WithBox">Parenting</button>
+			<button class="filterBtn-WithBox">Staying Safe</button>
+		</div>
+		
+		<h4>Understanding 
+			influencer scams</h4>
 		<p>
 			People with large social media followers or a public presence are increasingly being contacted 
 			by companies or representatives to collaborate in exchange for a commission or …
 		</p>
-		<p>8/09/2018</p>
-		<p>T.Smith</p>
+		<div class="article-footer">
+			<div class="date"><p>8/09/2018</p></div>
+			<div class="author"><p>T.Smith</p></div>
+		</div>
 	</div>
 
 	<div class="grid-item popular">
-		<button>Popular</button>
-		<h3>Cold call scams</h3>
+		<div>
+			<button class="filterBtn-WithBox">Popular</button>
+		</div>
+		<h4>Cold call scams</h4>
 		<p>
 			We have noticed a spike in reports from people who have had their social media profiles cloned 
 			by scammers who are using the new ‘cloned’ profile …
 		</p>
-		<p>3/04/2020</p>
-		<p>M. Swift</p>
+		<div class="article-footer"></div>
+			<div class="date"><p>3/04/2020</p></div>
+			<div class="author"><p>M. Swift</p></div>
+		</div>
 	</div>
 </div>
 <!-- Code for arrows from W3 school -->
