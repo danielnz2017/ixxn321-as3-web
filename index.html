@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+<!-- navi and logo -->
 	<div id="menu">
 		<header>
 			<img src="img/logo1.png" class="logo" />
@@ -33,19 +33,27 @@
 
 	<main>
 
-
+<!-- search bar -->
 		<div class="wrap">
 			<div class="search">
-				<input type="text" class="searchTerm" placeholder="Search Email Scams...">
+				<input type="text" id="search_text" class="searchTerm" placeholder="Search Email Scams...">
 
-				<button type="submit" class="searchButton">
+				<button type="button" value="search" id="search" class="searchButton">
 					<img src="img/sear1.png" class="icon1" />
 				</button>
+
+				<div class="tooltip">
+				<img src="img/info.png" class="info1" />
+				<span class="tooltiptext"> Search! </span> 
+				</div>
+
 			</div>
 		</div>
 
 
-		<section class="box">
+
+<!-- 3 main text -->
+		<section id="search_para" class="box">
 			<div class="g-row">
 
 
@@ -64,7 +72,7 @@
 
 				<div class="g1">
 					<h3>How this Site Works</h3>
-					<p>
+					<p id="search_para2">
 						If you are unclear about how anything works on this website. hover and click the red information
 						icons for more information about aspects of the website. <br>
 						<br>With the search bar above, type in any topic you are wanting to learn about or report on
