@@ -7,7 +7,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/main_style.css">
-	<script defer src="js/main.js"></script>
+	
 	<title>Scams</title>
 
 
@@ -26,28 +26,32 @@
     </ul>
 	</header>
 	</div>
+	<main>
+<div>
 <h1>Scams</h1>
 <p>	
 	Search and explore all the information and educational articles that we offer. 
 	These articles are free to view and can be quite helpful if you want to learn more about 
 	a certin type of scam.
 </p>
-
-<h2>Filter by:</h2>
-<button>Current scams</button>
-<button>How to</button>
-<button>Popular</button>
-<button>Staying Safe</button>
-<button>Money Scam</button>
-<button>Facebook Scam</button>
-<button>Email Scam</button>
-<button>Parenting</button>
-
+</div>
+<div id="filterBox">
+	<h2>Filter by:</h2>
+	<button class="filterBtn"  onclick="filterSelection('all')">All</button>
+	<button class="filterBtn"  onclick="filterSelection('currentScam')">Current scams</button>
+	<button class="filterBtn" onclick="filterSelection('howTo')">How to</button>
+	<button class="filterBtn" onclick="filterSelection('popular')">Popular</button>
+	<button class="filterBtn" onclick="filterSelection('stayingSafe')">Staying Safe</button>
+	<button class="filterBtn" onclick="filterSelection('moneyScam')" >Money Scam</button>
+	<button class="filterBtn" onclick="filterSelection('facebookScam')">Facebook Scam</button>
+	<button class="filterBtn" onclick="filterSelection('emailScam')">Email Scam</button>
+	<button class="filterBtn" onclick="filterSelection('parenting')">Parenting</button>
+</div>
 
 
 
 <div class="grid-container">
-	<div class="grid-item">
+	<div class="grid-item currentScams">
 		<button>Current scams</button>
 		<h3>Don’t be an egg</h3>
 		<p>
@@ -58,7 +62,7 @@
 		<p>K. Lam</p>
 	</div>
 
-	<div class="grid-item">
+	<div class="grid-item parenting howTo">
 		<button>Parenting</button>
 		<button>How to</button>
 		<h3>Prize & Sweepstake 
@@ -71,7 +75,7 @@
 		<p>L. Chris</p>
 	</div>
 
-	<div class="grid-item">
+	<div class="grid-item moneyScam">
 		<button>Money Scam</button>
 		<h3>Romance scams</h3>
 		<p>
@@ -82,7 +86,7 @@
 		<p>M. Wilson</p>
 	</div>
 
-	<div class="grid-item">
+	<div class="grid-item emailScam popular">
 		<button>Email Scam</button>
 		<button>Popular</button>
 		<h3>What to do in a data
@@ -93,8 +97,8 @@
 		<p>7/07/2021</p>
 		<p>G. Johnson</p>
 	</div>
-	
-	<div class="grid-item">
+
+	<div class="grid-item popular howTo">
 		<button>Popular</button>
 		<button>How to</button>
 		<h3>Understanding fake
@@ -107,7 +111,7 @@
 		<p>J. Martin</p>
 	</div>
 
-	<div class="grid-item">
+	<div class="grid-item popular">
 		<button>Popular</button>
 		<h3>COVID-19 Scam Spotting</h3>
 		<p>
@@ -118,7 +122,7 @@
 		<p>J. Moore</p>
 	</div>
 
-	<div class="grid-item">
+	<div class="grid-item parenting stayingSafe">
 		<button>Parenting</button>
 		<button>Staying Safe</button>
 		<h3>Understanding 
@@ -131,7 +135,7 @@
 		<p>T.Smith</p>
 	</div>
 
-	<div class="grid-item">
+	<div class="grid-item popular">
 		<button>Popular</button>
 		<h3>Cold call scams</h3>
 		<p>
@@ -142,19 +146,18 @@
 		<p>M. Swift</p>
 	</div>
 </div>
-
-	<main>
-
-		
-
-
-
+<!-- Code for arrows from W3 school -->
+<div>
+	<i class="arrow left"></i>
+		<button>1</button>
+		<button>2</button>
+		<button>3</button>
+		<button>4</button>
+	<i class="arrow right"></i>
+</div>
 
 	</main>
-
-
-
-
+	<script defer src="js/main.js"></script>
 </body>
 
 </html>
