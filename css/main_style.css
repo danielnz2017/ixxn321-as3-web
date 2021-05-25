@@ -82,57 +82,41 @@ text-align:center;
 
 
 /* Jessica's addtions */
-.grid-container{
-  display: grid;
-  grid-template-columns: 270px 270px 270px 270px;
-  grid-template-rows: 270px 270px ; 
-  grid-gap: 10px;
-  padding:10px;
-
+#scamPage{
+  text-align: center;
+  width:75%;
+  padding-top: 40px;
+  margin:auto;
+  padding-bottom:2%;
+}
+#intro{
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 40px;
+  margin-top:30px;
 
-
+  
 }
-
-.grid-item {
-  background-color: #C4D0D7  ;
-  border: 5px solid #044777;
-  padding:10px;
-  
-  
-  display:none;
-  box-sizing: border-box;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-
+#intro-paragraph{
+  font-size: 20px;
+}
+.openningText{
+  width:63%;
+  position:relative;
+  margin:auto;
 }
 p{
   font-size: 15px;
 }
 
-#introText{
-
-  text-align: center;
-  padding-top: 40px;
-  
-}
 #filterBox{
+  
   flex-direction: row;
   justify-content: center;
-  margin-left:5%;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-left:6%;
   
-}
-.filterBtn-WithBox{
-  background-color:#FFBB33;
-  border-radius: 5px ;
-  padding:10px ;
-  width:auto;
-  border:none;
-  display:inline-block;
-  position: relative;
+  margin-bottom: 10px;
+  width:80%;
   
 }
 .filterBtn{
@@ -145,11 +129,47 @@ p{
 #filterByTitle{
   margin-bottom: 10px;
 }
+.grid-container{
+  display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
+  grid-template-rows: 270px 270px ; 
+  grid-gap: 20px;
+  padding:10px;
+
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.grid-item {
+  background-color:  rgba(196, 208, 215, 0.2) ;
+  border: 5px solid #044777;
+  padding:10px;
+  
+  
+  
+  display:none;
+  box-sizing: border-box;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+
+}
+
+.filterBtn-WithBox{
+  background-color:#FFBB33;
+  border-radius: 5px ;
+  padding:10px ;
+  width:auto;
+  border:none;
+  display:inline-block;
+  position: relative;
+  
+}
+
 
 .date{
   width:50%;
-  
-
 }
 
 .author{
@@ -181,3 +201,26 @@ p{
 .show{
   display:grid;
 }
+
+#footer-nav{
+  margin-top:2%;  
+  text-align: center;
+  margin-bottom:2%;
+}
+.footer-page-number{
+  background-color:#FFBB33;
+  border-radius: 5px ;
+  padding:10px ;
+  width:auto;
+  border:none;
+  display:inline-block;
+  position: relative;
+  margin:5px;
+}
+
+.footer-page-number:hover{
+  background-color:#F8F8F8;
+  border: solid #FFBB33;
+  
+}
+

@@ -1,32 +1,12 @@
+
+
+
+
+
+
+
 // jess's code
 
-// const toggleList = document.getElementById('filterBtn');
-// const gridContainer = document.querySelector('.grid-container');
-
-// toggleList.addEventListener('click', () => {
-//     if (gridContainer.style.display == 'none') {
-//         toggleList.textContent = 'Current Scam';
-//         gridContainer.style.display = 'grid';
-//     } else{
-//         gridContainer.style.display = 'none';
-//         toggleList.textContent = 'CurrentScam';
-//     }
-    
-// }); 
-
-// const toggleFilter = document.getElementById('filterBtn');
-// const gridContainer = document.querySelector('.grid-item');
-
-// toggleFilter.addEventListener('click', () => {
-//     if (gridContainer.style.display == 'none') {
-//         toggleFilter.textContent = 'Current Scam';
-//         gridContainer.style.display = 'grid';
-//     } else {
-//         gridContainer.style.display = 'none';
-//         toggleFilter.textContent = 'Current Scam';
-//     }
-    
-// });
 window.onload = function() {
     filterSelection("all");
 };
@@ -70,3 +50,10 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 
 }
+
+
+
+
+
+
+
