@@ -100,8 +100,7 @@ li a:hover:not(.active) {
 }
 
 
-
-.search {
+.search-div {
   width: 100%;
   position: relative;
   display: flex;
@@ -138,6 +137,12 @@ li a:hover:not(.active) {
   box-shadow: 5px 5px 5px rgb(172, 172, 172);
 }
 
+.searchButton:hover{
+
+  /* box-shadow: 10px 10px 10px rgb(172, 172, 172); */
+  border-radius: 0 25px 25px 0;
+
+}
 
 
 .wrap{
@@ -272,3 +277,4 @@ p {
   visibility: visible;
   opacity: 1;
 }
+
