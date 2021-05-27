@@ -1,9 +1,10 @@
 
 
 
-
-
-
+/*
+The following code is from W3 schools. I have edited it to fit with what I was trying to achieve. 
+This code is to help create the filtering system for the scam article page
+*/
 
 // jess's code
 
