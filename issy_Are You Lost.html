@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    
+<!-- Style sheet -->
+
+<link rel="stylesheet" href="./css/issy_are you lost page.css">
+<link rel="JS" href="js/main.js">
+
+ <!--x Style sheet x-->
+
+
+    <title>Scamgo</title>
+</head>
+<body>
+
+<!-- navi bar -->
+<nav>
+	<!-- responsive navi -->
+	<div class="burger">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+		<div class="line4"></div>
+	</div>
+
+	<!-- navi bar - bigger screen -->
+
+	<header class='header'>
+
+		<div class="links">
+			<img src="img/logo1.png" class="logo" />
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li><a href="daniel_index.html">Home</a></li>
+				<li><a href="issy_Report Scam.html">Report a Scam</a></li>
+				<li><a href="jessica_Scams.html">Scam</a></li>
+				<li><a class="active-3" href="issy_Are You Lost.html">Are You Lost?</a></li>
+			</ul>
+		</div>
+	</header>
+
+</nav>
+
+
+
+<div class="container">
+    <div class="accordion">
+        <div class="contentbox">
+            <div class="label"><h1>Are you lost? Click here</h1></div>
+                <div class="content">
+                  <br>
+                  <p>If you have lost a large amount of money or feel threatened, call</p>
+                    <h2>0800 389 204 34 or 105</h2>
+                    <p>If you want to learn more about scams, visit</p>
+                    <h2>https://www.consumerprotection.govt.nz/general-help/scamwatch/report-a-scam/</h2>
+                    <br>
+                    <h2>https://www.dia.govt.nz/diawebsite.nsf/wpg_URL/Services-Anti-Spam-Online-scams</h2>
+                    <p>or, send us an email at</p>
+                    <h2>ScamGo@gmail.com</h2>
+                </div>
+        </div>
+    </div> 
+</div> 
+
+
+
+
+<script>
+
+    const accordion = document.getElementsByClassName('contentbox');
+    
+    for (i=0; i<accordion.length; i++){
+    accordion[i].addEventListener('click',function(){
+        this.classList.toggle('active')
+    })
+    }
+    </script>
+
+
+   </body>
+   </html>
