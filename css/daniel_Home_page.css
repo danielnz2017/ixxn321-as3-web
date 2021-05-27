@@ -21,7 +21,7 @@
   
   }
   
-
+/* website logo */
   .logo{
 
 
@@ -37,57 +37,6 @@
 
 
 /* nav bar */
-
-/* ul {
-    list-style-type: none;
-    padding: 0;
-    overflow:hidden;
-    
-}
-
-li {
-  display:inline-block;
-  margin-right: 2%;
-  
-  
-}
-
-
-li a:link,a:visited {
-    margin:0 auto;
-    display:block;
-    width: 200px;
-    color:#044777;;
-    text-align:center;
-    padding:20px;
-    text-decoration:none;
-    font-weight: 900;
-    
-}
-li a:hover:not(.active) {
-  font-size: 15pt;
-  font-weight: 900;
-  color:#FFBB33;
-}
-
-.active, .active1, .active2, .active3 {
-  text-transform:uppercase;
-  font-size: 15pt;
-  font-weight: 900;
-  
-}
-
-
-#menu {
-  background-color:whitesmoke;
-  text-align:center;
-  box-shadow: 5px 5px 5px rgb(172, 172, 172);
-
-
-  
-} */
-
-
 nav {
 	background: whitesmoke;
 	font-family:'roboto';
@@ -143,7 +92,6 @@ nav {
   
   
   /* menu */
-  
   .header .menu {
 	clear: both;
 	max-height: 0;
@@ -151,8 +99,8 @@ nav {
 	background:#C3CED3;
   }
   
+
   /* menu icon */
-  
   .header .menu-icon {
 	cursor: pointer;
 	display: inline-block;
@@ -199,7 +147,6 @@ nav {
   }
   
   /* menu btn */
-  
   .header .menu-btn {
 	display: none;
   }
@@ -229,9 +176,6 @@ nav {
     .header li {
       float: left;
     }
-    .header li a {
-  
-    }
   
     .links li a{
       padding: 30px 30px;
@@ -259,10 +203,6 @@ nav {
   
     
     }
-
-
-
-
 
 /* search bar */
 
@@ -342,18 +282,8 @@ nav {
  text-decoration:underline;
 }
 
-/* ::placeholder {
-
-  padding: 20px;
-} */
-
-
-
-
 
 /* 3 main texts */
-
-
 .box{
     
   position: relative;
@@ -409,8 +339,7 @@ p {
 
 
 
-/* Little note for users */
-
+/* Little help note for users */
 .tooltip {
   position: relative;
   display: inline-block;

@@ -1,3 +1,6 @@
+
+// simple keywords search
+
 document.addEventListener('DOMContentLoaded', function () {
     var searchpara = document.getElementById("search_para").innerHTML;
     searchpara = searchpara.toString();
@@ -15,14 +18,3 @@ function highlight_word(searchpara) {
 }
 
 
-
-
-
-// function search(query){
-//     query.preventDefault();
-//     let vquery = query.target.elements["search"].value;
-//     console.log(vquery)
-    
-//  }
- 
-//  something.addEventListener("submit", search, false)

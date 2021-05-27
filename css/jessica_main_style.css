@@ -1,3 +1,5 @@
+
+/* styling that is consistant throughout all the pages */
 *, *::after, *::before {
 
   box-sizing: border-box;
@@ -31,7 +33,7 @@ background: #F8F8F8;
 
 
 
-/* nav bar */
+/* nav bar - consistant throughout the pages*/
 
 nav {
 	background: whitesmoke;
@@ -174,9 +176,6 @@ nav {
     .header li {
       float: left;
     }
-    .header li a {
-  
-    }
   
     .links li a{
       padding: 30px 30px;
@@ -208,7 +207,9 @@ nav {
 
 
 
-/* Jessica's addtions */
+/* Jessica's code*/
+
+/* introduction elements styling */
 #scamPage{
   text-align: center;
   width:75%;
@@ -235,7 +236,7 @@ nav {
 p{
   font-size: 15px;
 }
-
+/* filtering buttons element styling  */
 #filterBox{
   
   flex-direction: row;
@@ -256,6 +257,7 @@ p{
 #filterByTitle{
   margin-bottom: 10px;
 }
+/* article tile styling */
 .grid-container{
   display: grid;
   grid-template-columns: 270px 270px 270px 270px;
@@ -282,7 +284,7 @@ p{
   border-radius: 5px;
 
 }
-
+/* styling for filter buttons inside the article tile */
 .filterBtn-WithBox{
   background-color:#FFBB33;
   border-radius: 5px ;
@@ -294,7 +296,7 @@ p{
   
 }
 
-
+/* inner article tile styling */
 .date{
   width:50%;
 }
@@ -307,7 +309,7 @@ p{
   display:flex;
 
 }
-
+/* footer navigation between the different article pages */
 .arrow {
   border: solid black;
   border-width: 0 3px 3px 0;

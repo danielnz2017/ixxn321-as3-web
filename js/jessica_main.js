@@ -1,11 +1,9 @@
 
-
-
-
-
-
-
 // jess's code
+
+
+// the following code has come from W3 schools, 
+//I have changed aspects to fit with what I was requiring for this aspect of the website
 
 window.onload = function() {
     filterSelection("all");
