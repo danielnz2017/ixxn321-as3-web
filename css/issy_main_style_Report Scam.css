@@ -58,7 +58,7 @@ body {
     border-radius: 0px 0px 20px 20px;
     }
   
-    .active, .active1, .active2, .active3 {
+    .active-1 {
       text-transform:uppercase;
       font-size: 12pt;
       font-weight: 900;
@@ -171,7 +171,7 @@ body {
         display: none;
       }
   
-      .active, .active1, .active2, .active3 {
+      .active-1 {
         text-transform:uppercase;
         font-size: 12pt;
         font-weight: 900;
